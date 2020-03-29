@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-5">Weight Converter</h1>
+
+          <form>
+            <div class="form-group">
+              <h5 class="d-inline-block mr-2">
+                Choose Unit:
+              </h5>
+              <select id="unitSelector" class="mb-3 p-1">
+                <option selected value="grammes">grammes</option>
+                <option value="Kilograms">Kilograms</option>
+                <option value="Tonnes">Tonnes</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input
+                id="unitInput"
+                type="number"
+                placeholder="Enter grammes..."
+                class="form-control form-control-lg mb-4"
+              />
+            </div>
+          </form>
+
+          <div id="output">
+            <div class="card bg-primary mb-3">
+              <div class="card-body">
+                <h4 id="unitName_1">Kilograms</h4>
+                <div id="unitValue_1"></div>
+              </div>
+            </div>
+            <div class="card bg-success mb-3">
+              <div class="card-body">
+                <h4 id="unitName_2">Tonnes</h4>
+                <div id="unitValue_2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
